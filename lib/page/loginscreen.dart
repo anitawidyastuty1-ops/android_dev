@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+class LatihanBottomNavigator extends StatefulWidget {
+  const LatihanBottomNavigator ({super.key});
+
+  @override
+  LatihanBottomNavigatorState createState() => LatihanBottomNavigatorState(); 
 }
 
-class MyApp extends StatelessWidget {
+class LatihanBottomNavigatorState extends State<LatihanBottomNavigator
   const MyApp({super.key});
 
   @override

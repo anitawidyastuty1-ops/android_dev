@@ -1,6 +1,8 @@
-import 'package:android_dev/page/loginscreen.dart';
-
+import 'package:android_dev/latihandrawer.dart';
+import 'package:android_dev/material.dart';
+import 'package:android_dev/Latihandrawer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,13 +11,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const LoginPage(),
-    );
+      debugShowCheckedModeBanner: false,
+      title: 'contoh Bottom Navbar',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const Latihandrawer(), // Memanggil halaman navigasi utama
+    ); // MaterialApp
   }
 }

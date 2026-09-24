@@ -1,10 +1,9 @@
-import 'package:android_dev/latihandrawer.dart';
-import 'package:android_dev/material.dart';
-import 'package:android_dev/Latihandrawer.dart';
+import 'package:android_dev/Tugas_14/Views/post_list_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  PostListScreenDay32();
   runApp(const MyApp());
 }
 
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'contoh Bottom Navbar',
+      title: 'Aplikasi Pendaftaran SQFlite',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const Latihandrawer(), // Memanggil halaman navigasi utama
-    ); // MaterialApp
+      home: const PostListScreenDay32(),
+    );
   }
 }
